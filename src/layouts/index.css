@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500');
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono');
+
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -183,7 +187,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  font: 100% georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -617,8 +621,125 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
+
+/* 
+ *
+ * Custom styles 
+ *
+ */
+
+
+/* Responsive layout */
+@media only screen and (max-width: 959px) {
+  html {
+    font-size: 95%;
+  }
+  .project-index .project{
+    width: 100%;
+  }
+  .single .main{
+    flex-direction: column-reverse;
+  }
+  .single .content,
+  .single .metadata {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 960px) {
   html {
     font-size: 100%;
   }
+  .container {
+    max-width: 960px;
+  }
+  .project-index .project {
+    width: 50%;
+    float: left;
+  }
+  .single .content {
+    width: 75%;
+  }
+  .single .metadata{
+    width: 25%;
+  }
 }
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 110%;
+  }
+  .container{
+    max-width: 1200px;
+  }
+  .project-index .project {
+    width: 50%;
+    float: left;
+  }
+  .single .content {
+    width: 66.66%;
+  }
+  .single .metadata{
+    width: 33.34%;
+  }
+}
+.project-index:after{
+  content: ' ';
+  clear: both;
+  display: block;
+}
+
+
+/* Global overrides */
+body {
+  background: rgb(250,246,246)
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover{
+  text-decoration: underline;
+}
+ul, li{
+  margin:0;
+  padding:0;
+}
+
+/* Fonts */
+body,h1,h2,h3,h4,p,div,span,dt,dd {
+  font-family:'Rubik', sans-serif;
+  font-weight: normal;
+}
+.meta {
+  font-family: 'Overpass Mono';
+  text-transform: uppercase;
+  color: rgb(0,0,220);
+  font-weight: lighter;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: .67em 0;
+}
+.project-index h3 {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.single h3 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.25;
+}
+figcaption {
+  font-size: .875rem;
+  line-height: 1.1428rem;
+  margin: .5rem 0;
+  color: hsla(0,0%,0%,.5);
+}
+
+dt { margin: 0 0 .5rem; }
+dd { margin: 0 0 1rem; }
