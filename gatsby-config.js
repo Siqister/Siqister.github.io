@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Siqi Zhu: Input / Output',
   },
   plugins: [
   	'gatsby-plugin-react-helmet',
