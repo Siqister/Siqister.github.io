@@ -30,7 +30,12 @@ class Layout extends Component{
             { name: 'keywords', content: 'sample, something' },
           ]}
         />
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header 
+          siteTitle={data.site.siteMetadata.title} 
+          style={{
+            transform: `translate(${isMenuOpen?'-300px':'0'})`
+          }}
+        />
         <Menu 
           isMenuOpen={isMenuOpen}
           onToggle={() => { this.setState({isMenuOpen:!isMenuOpen}) }}

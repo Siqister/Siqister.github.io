@@ -66,7 +66,7 @@ export default ({ isMenuOpen, onToggle, tags }) => {
 						>
 							{tags.map(tag => 
 								<li key={tag} style={tagsListItemStyle}>
-									<Link to={`/tags/${_.kebabCase(tag)}`}>{tag}</Link>
+									<Link to={`/tags/${_.kebabCase(tag)}`}>{_.capitalize(tag)}</Link>
 								</li>
 							)}
 						</ul>

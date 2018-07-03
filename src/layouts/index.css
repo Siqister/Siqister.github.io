@@ -674,10 +674,14 @@ pre tt:after {
   .single .metadata{ width: 33.34%; }
   .about .content { column-count: 2; }
 }
+
 .project-index:after{
   content: ' ';
   clear: both;
   display: block;
+}
+.project-index .project:nth-child(odd){
+  clear: both;
 }
 
 
@@ -695,6 +699,9 @@ a:hover{
 ul, li{
   margin:0;
   padding:0;
+}
+img {
+  margin:0;
 }
 
 /* Fonts */
