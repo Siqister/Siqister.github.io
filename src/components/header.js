@@ -28,7 +28,7 @@ const Header = ({ siteTitle, style }) => (
         to="/"
         style={titleStyle}
       >
-        {`INPUT/OUTPUT`}
+        {`:INPUT/OUTPUT:`}
       </Link>
     </h1>
   </div>
