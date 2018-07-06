@@ -71,7 +71,7 @@ export default ({ isMenuOpen, onToggle, tags }) => {
 							)}
 						</ul>
 					</li>
-					<li style={navListItemStyle}><Link to='/writing'>Writing</Link></li>
+					<li style={navListItemStyle}><span style={{textDecoration:'line-through'}}>Writing</span> (coming soon)</li>
 					<li style={navListItemStyle}><Link to='/about'>About</Link></li>
 				</ul>
 			</nav>

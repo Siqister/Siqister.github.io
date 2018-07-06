@@ -11,7 +11,9 @@ I worked with the leadership of MassDevelopment, Massachusetts's economic develo
 
 As part of the initiative, I also developed a digital product for mapping, tracking, and visualizing economic development activities across ten key “gateway” cities across the state.
 
-<iframe width="780" height="520" src="https://www.useloom.com/embed/c451cb351c2b4698b27ae31684a2ecfb" frameborder="0" allowfullscreen></iframe>
+<div class='video-iframe-container'>
+	<iframe src="https://www.useloom.com/embed/c451cb351c2b4698b27ae31684a2ecfb" frameborder="0" allowfullscreen></iframe>
+</div>
 
 ![scale](7.scale.jpg "Geographically concentrate investment to maximize its impact and visibility
 ")

@@ -1,7 +1,7 @@
 ---
 title: "LockPark / Boston Green Links"
 date: "2014-04"
-date_end: "2014_04"
+date_end: "2014-04"
 category: "project"
 client: "Boston Society of Architects-sponsored competition"
 tags: ["Public realm", "Urban design"]

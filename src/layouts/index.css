@@ -689,11 +689,14 @@ pre tt:after {
 body {
   background: rgb(250,246,246)
 }
-a {
+a { color: inherit; }
+h1 a,
+.metadata a,
+.thumb a,
+nav a {
   text-decoration: none;
-  color: inherit;
 }
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 ul, li{
@@ -702,6 +705,22 @@ ul, li{
 }
 img {
   margin:0;
+}
+.video-iframe-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 60%;
+  position: relative;
+}
+.video-iframe-container iframe{
+  width:100%;
+  height:100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.single .highlight {
+  background: hsla(0,0%,0%,.08);
 }
 
 /* Fonts */
